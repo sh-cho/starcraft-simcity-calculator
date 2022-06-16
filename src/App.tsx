@@ -2,6 +2,7 @@ import React from 'react';
 
 import {atom, RecoilRoot, selector, useRecoilState, useRecoilValue,} from 'recoil';
 import {Building, Race, Unit} from "./Star";
+import './App.css';
 
 
 function App() {
@@ -209,12 +210,22 @@ const calcMargins = selector({
 function CalcResult() {
     const result = useRecoilValue(calcMargins);
 
-    return <ul>
-        위 or 왼쪽 ............................................................................................................. 아래 or 오른쪽
-        {result.map((pair, index) =>
-            <li key={index}>{pair[0].toString()} / {pair[1].toString()}</li>
-        )}
-    </ul>;
+    return <table>
+        <thead>
+            <tr>
+                <th>위 or 왼쪽</th>
+                <th>아래 or 오른쪽</th>
+            </tr>
+        </thead>
+        <tbody>
+            {result.map((pair, index) =>
+                <tr key={index}>
+                    <td>{pair[0].name}</td>
+                    <td>{pair[1].name}</td>
+                </tr>
+            )}
+        </tbody>
+    </table>;
 }
 
 export default App;
