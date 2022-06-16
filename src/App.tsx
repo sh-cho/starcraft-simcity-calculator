@@ -210,7 +210,7 @@ function CalcResult() {
     const result = useRecoilValue(calcMargins);
 
     return <ul>
-        위 or 왼쪽 ................................................. 아래 or 오른쪽
+        위 or 왼쪽 ............................................................................................................. 아래 or 오른쪽
         {result.map((pair, index) =>
             <li key={index}>{pair[0].toString()} / {pair[1].toString()}</li>
         )}
