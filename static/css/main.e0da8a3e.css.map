@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.e0da8a3e.css","mappings":"AAAA,YACI,gBACJ","sources":["App.css"],"sourcesContent":["table, th, td {\n    border: 1px solid;\n}"],"names":[],"sourceRoot":""}
