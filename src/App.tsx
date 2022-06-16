@@ -14,11 +14,60 @@ function App() {
 
 // db
 const buildings: Array<Building> = [
+    // terran
     new Building("커맨드센터", 6, 5, 7, 6, Race.TERRAN),
     new Building("서플라이 디포", 10, 9, 10, 5, Race.TERRAN),
     new Building("리파이너리", 8, 7, 0, 0, Race.TERRAN),
     new Building("배럭", 16, 7, 8, 15, Race.TERRAN),
     new Building("아카데미", 8, 3, 0, 7, Race.TERRAN),
+    new Building("팩토리", 8, 7, 8, 7, Race.TERRAN),
+    new Building("스타포트", 16, 15, 8, 9, Race.TERRAN),
+    new Building("사이언스 퍼실리티", 16, 15, 10, 9, Race.TERRAN),
+    new Building("엔지니어링 베이", 16, 15, 16, 19, Race.TERRAN),
+    new Building("아머리", 0, 0, 0, 9, Race.TERRAN),
+    new Building("미사일 터렛", 16, 15, 0, 15, Race.TERRAN),
+    new Building("벙커", 16, 15, 8, 15, Race.TERRAN),
+    new Building("컴샛/뉴클리어", -5, 0, 16, 6, Race.TERRAN),
+    new Building("컨트롤 타워", -15, 3, 8, 9, Race.TERRAN),
+    new Building("코버트옵스/피직스랩", -15, 3, 8, 9, Race.TERRAN),
+    new Building("머신샵", -7, 0, 8, 7, Race.TERRAN),
+    // new Building("노라드 ||", 0, 0, 0, 0, Race.TERRAN),
+    // new Building("이온캐논", 0, 0, 0, 0, Race.TERRAN),
+    // new Building("Psi Disrupter", 0, 10, 10, 0, Race.TERRAN),
+    // new Building("Power Generator", 8, 0, 20, 4, Race.TERRAN),
+
+    // protoss
+    new Building("넥서스", 8, 7, 9, 8, Race.PROTOSS),
+    new Building("로보틱스 퍼실리티", 12, 7, 16, 11, Race.PROTOSS),
+    new Building("파일런", 16, 15, 20, 11, Race.PROTOSS),
+    new Building("어시밀레이터", 16, 15, 0, 7, Race.PROTOSS),
+    new Building("옵저베이터리", 4, 3, 16, 3, Race.PROTOSS),
+    new Building("게이트웨이", 16, 15, 16, 7, Race.PROTOSS),
+    new Building("포톤 캐논", 12, 11, 16, 15, Race.PROTOSS),
+    new Building("시타델 오브 아둔", 24, 7, 8, 7, Race.PROTOSS),
+    new Building("사이버네틱스 코어", 8, 7, 8, 7, Race.PROTOSS),
+    new Building("템플러 아카이브", 16, 15, 8, 7, Race.PROTOSS),
+    new Building("포지", 12, 11, 8, 11, Race.PROTOSS),
+    new Building("스타게이트", 16, 15, 8, 15, Race.PROTOSS),
+    new Building("플릿비콘", 8, 0, 0, 7, Race.PROTOSS),
+    new Building("아비터 트리뷰널", 4, 3, 4, 3, Race.PROTOSS),
+    new Building("로보틱스 서포트 베이", 16, 15, 0, 11, Race.PROTOSS),
+    new Building("쉴드 배터리", 16, 15, 16, 15, Race.PROTOSS),
+
+    // zerg
+    new Building("인페스티드 커맨드센터", 6, 5, 7, 6, Race.ZERG),
+    new Building("해처리/레어/하이브", 15, 14, 16, 15, Race.ZERG),
+    new Building("나이더스 커널", 0, 0, 0, 0, Race.ZERG),
+    new Building("히드라리스크 덴", 8, 7, 0, 7, Race.ZERG),
+    new Building("디파일러 마운드", 16, 15, 0, 27, Race.ZERG),
+    new Building("스파이어/그레이터 스파이어", 4, 3, 0, 7, Race.ZERG),
+    new Building("퀸즈 네스트", 10, 15, 4, 3, Race.ZERG),
+    new Building("에볼루션 챔버", 4, 15, 0, 11, Race.ZERG),
+    new Building("울트라리스크 카번", 8, 15, 0, 0, Race.ZERG),
+    new Building("스포닝 풀", 12, 7, 4, 13, Race.ZERG),
+    new Building("크립/성큰/스포어", 8, 8, 8, 8, Race.ZERG),
+    new Building("익스트랙터", 0, 0, 0, 0, Race.ZERG),
+    // new Building(, Race.ZERG),
 ];
 
 const units: Array<Unit> = [
